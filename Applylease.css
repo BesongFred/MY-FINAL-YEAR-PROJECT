@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: darkslategray;
+    animation: zoom 1s;
 }
 
 header {
@@ -124,4 +125,13 @@ footer {
   #apply-for-lease-form button[type="submit"]:hover {
     background-color: #3e8e41;
   }
+  @keyframes zoom{
+    from{
+        transform: scale(0);
+
+    }
+    to{
+        transform: scale(1);
+    }
+}
   

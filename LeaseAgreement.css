@@ -5,6 +5,7 @@ body {
     background-image: url('background.jpg'); /* Add your background image */
     background-size: cover;
     color: #fff;
+    animation: zoom 1s;
 }
 
 .container {
@@ -73,4 +74,13 @@ button:hover {
 footer {
     text-align: center;
     margin-top: 20px;
+}
+@keyframes zoom{
+    from{
+        transform: scale(0);
+
+    }
+    to{
+        transform: scale(1);
+    }
 }

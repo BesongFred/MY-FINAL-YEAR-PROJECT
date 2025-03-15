@@ -3,6 +3,7 @@ body {
     background-image: url('house214.JPG'); /* Replace with your background image */
     background-size: cover;
     color: white;
+    animation: zoom 1s;
 }
 
 .container {
@@ -81,4 +82,13 @@ button {
 
 button:hover {
     background-color: #218838;
+}
+@keyframes zoom{
+    from{
+        transform: scale(0);
+
+    }
+    to{
+        transform: scale(1);
+    }
 }

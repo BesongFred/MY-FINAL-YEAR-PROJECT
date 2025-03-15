@@ -6,6 +6,7 @@ body {
     background-size: cover;
     background-position: center;
     color: white;
+    animation: zoom 1s;
 }
 
 .container {
@@ -79,4 +80,13 @@ footer {
     padding: 1em;
     text-align: center;
     clear: both;
+}
+@keyframes zoom{
+    from{
+        transform: scale(0);
+
+    }
+    to{
+        transform: scale(1);
+    }
 }

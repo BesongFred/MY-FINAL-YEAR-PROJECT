@@ -3,6 +3,7 @@ body {
     background-color: #f4f4f4;
     margin: 0;
     padding: 0;
+    animation: zoom 1s;
 }
 
 .container {
@@ -104,4 +105,13 @@ footer {
     padding: 1em;
     text-align: center;
     clear: both;
+}
+@keyframes zoom{
+    from{
+        transform: scale(0);
+
+    }
+    to{
+        transform: scale(1);
+    }
 }
