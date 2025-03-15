@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0px;
     background-color: #f4f4f4;
+    animation: zoom 1s;
 }
 body {
     margin: 0;
@@ -72,4 +73,13 @@ footer {
     padding: 20px;
     background-color: #333;
     color: #fff;
+}
+@keyframes zoom{
+    from{
+        transform: scale(0);
+
+    }
+    to{
+        transform: scale(1);
+    }
 }

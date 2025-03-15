@@ -2,6 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    animation: zoom 1s;
 }
 
 header {
@@ -68,4 +69,13 @@ footer {
     text-align: center;
     padding: 20px;
     background-color: #f1f1f1;
+}
+@keyframes zoom{
+    from{
+        transform: scale(0);
+
+    }
+    to{
+        transform: scale(1);
+    }
 }

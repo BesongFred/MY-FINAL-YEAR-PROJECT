@@ -2,6 +2,7 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     margin: 0;
+    animation: zoom 1s;
 }
 
 header {
@@ -80,4 +81,13 @@ button:hover {
 .message {
     text-align: center;
     margin-top: 10px;
+}
+@keyframes zoom{
+    from{
+        transform: scale(0);
+
+    }
+    to{
+        transform: scale(1);
+    }
 }
