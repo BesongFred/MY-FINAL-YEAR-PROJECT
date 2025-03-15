@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <title>Contact Form</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="property.html">Properties</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+      </header>
+      
+    <div class="container">
+        <h1>Contact Us</h1>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <label for="propertyType">Property Type:</label>
+            <select id="propertyType" name="propertyType" onchange="updatePropertyOptions()">
+                <option value="">Select...</option>
+                <option value="cars">Cars</option>
+                <option value="houses">Houses</option>
+                <option value="lands">Lands</option>
+            </select>
+
+            <label for="propertyDetails">Property Details:</label>
+            <select id="propertyDetails" name="propertyDetails">
+                <!-- Options will be populated by JavaScript -->
+            </select>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="contact.js"></script>
+</body>
+</html>

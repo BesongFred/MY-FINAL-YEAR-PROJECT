@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tenant Information</title>
+    <link rel="stylesheet" href="TenantInfo.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="HomePage.html">HOME</a></li>
+                <li><a href="lease.html">LEASE</a></li>
+                <li><a href="TenantInfo.html">TENANTS</a></li>
+                <li><a href="rent.html">PROPERTIES</a></li>
+                <li><a href="Agent.html">AGENTS</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+               
+            </ul>
+        </nav>
+      </header>
+    <div class="container">
+        <h2>Tenant Information</h2>
+        <form id="tenant-form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="lease-start">Lease Start Date:</label>
+                <input type="date" id="lease-start" name="lease-start" required>
+            </div>
+            <div class="form-group">
+                <label for="lease-end">Lease End Date:</label>
+                <input type="date" id="lease-end" name="lease-end" required>
+            </div>
+            <div class="form-group">
+                <label for="rent">Rent:</label>
+                <input type="number" id="rent" name="rent" required>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="success-message" style="display:none;">
+            <p>Transaction successful!</p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 Real Estate Property Management</p>
+    </footer>
+    <script src="regis.js"></script>
+</body>
+</html>
+

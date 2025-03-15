@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lease Agreement</title>
+    <link rel="stylesheet" href="LeaseAgreement.css">
+</head>
+<body>
+    <div id="resulDiv"></div>
+    <div class="container">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="HomePage.html">HOME</a></li>
+                    <li><a href="lease.html">LEASE</a></li>
+                    <li><a href="TenantInfo.html">TENANTS</a></li>
+                    <li><a href="rent.html">PROPERTIES</a></li>
+                    <li><a href="Agent.html">AGENTS</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                   
+                </ul>
+            </nav>
+          </header>
+
+        <section id="lease-agreement">
+            <h2>Lease Agreement</h2>
+            <form id="lease-form">
+                <label for="tenant-name">Tenant Name:</label>
+                <input type="text" id="tenant-name" required>
+
+                <label for="property-address">Property Address:</label>
+                <input type="text" id="property-address" required>
+
+                <label for="lease-term">Lease Term (months):</label>
+                <input type="number" id="lease-term" required>
+
+                <label for="monthly-rent">Monthly Rent ($):</label>
+                <input type="number" id="monthly-rent" required>
+
+                <button type="submit">Submit Lease Agreement</button>
+            </form>
+            <div id="result"></div>
+        </section>
+
+        <footer id="contact">
+            <p>Contact us: info@propertymanagement.com | Phone: (123) 456-7890</p>
+        </footer>
+    </div>
+
+    <script src="LeaseAgreement.js"></script>
+</body>
+</html>

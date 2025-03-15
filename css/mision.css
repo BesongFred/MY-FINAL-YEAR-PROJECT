@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Light background color */
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.mission-vision {
+    display: flex;
+    justify-content: space-between;
+    background-color: white; /* White background for contrast */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(9, 179, 74, 0.695);
+    padding: 20px;
+}
+
+.mission, .vision {
+    flex: 1; /* Flexbox to distribute space equally */
+    margin: 10px; /* Space between columns */
+}
+
+.mission h2, .vision h2 {
+    text-align: center;
+    color: #333; /* Dark text color */
+}
+
+.mission p, .vision p {
+    text-align: justify; /* Justify text for better readability */
+    color: #e6187c; /* Lighter text color */
+}
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+header nav ul li {
+    margin-right: 10px;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+}
+  body {
+      margin: 0;
+      height: 100vh; /* Full height of the viewport */
+      background-image: url('house22\ \(2\).JPG'); /* Specify the path to your image */
+      background-size: cover; /* Cover the entire area */
+      background-position: center; /* Center the image */
+      background-repeat: no-repeat; /* Prevent the image from repeating */
+  }
+  

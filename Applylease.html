@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply for Lease | Real Estate Property Management</title>
+    <link rel="stylesheet" href="Applylease.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="HomePage.html">HOME</a></li>
+                <li><a href="lease.html">LEASE</a></li>
+                <li><a href="TenantInfo.html">TENANTS</a></li>
+                <li><a href="rent.html">PROPERTIES</a></li>
+                <li><a href="Agent.html">AGENTS</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+               
+            </ul>
+        </nav>
+       
+    </header>
+    <main>
+        <section class="apply-for-lease">
+            <h1>Apply for Lease</h1>
+            <p>Please fill out the form below to apply for a lease.</p>
+            <form id="apply-for-lease-form">
+                <h2>Apply for Lease</h2>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+                
+                <label for="property">Property:</label>
+                <select id="property" name="property">
+                    <option value="">Select a property</option>
+                    <option value="property1"> HOUSE</option>
+                    <option value="property2">CARS</option>
+                    <option value="property3">LANDS</option>
+                    <option value="property3">HOUSE APPLIANCE</option>
+                    <option value="property3">LAPTOP</option>
+                </select><br><br>
+                  <!-- Add property options here -->
+                </select>
+                
+                <label for="move-in-date">Move-in Date:</label>
+                <input type="date" id="move-in-date" name="move-in-date">
+                
+                <button type="submit">Submit Application</button>
+              </form>
+              
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Real Estate Property Management</p>
+    </footer>
+    <script src="Applylease.js"></script>
+</body>
+</html>
