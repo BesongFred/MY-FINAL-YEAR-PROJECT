@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('lovea.jpg'); /* Replace with your background image */
+    background-image: url('./img/house201.jpeg'); /* Replace with your background image */
     background-size: cover;
     background-position: center;
     color: white;
@@ -50,6 +50,14 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
     background-color: #218838;
+}
+#agentForm {
+    background: red;
+    width: 100%;
+}
+#agentForm input {
+    background: yellow;
+    width: 75%;
 }
 header {
     background-color: #333;

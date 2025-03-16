@@ -1,48 +1,46 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0px;
-    background-color: #f4f4f4;
-    animation: zoom 1s;
-}
+
 body {
     margin: 0;
     height: 100vh; /* Full height of the viewport */
-    background-image: url('house22\ \(4\).JPG'); /* Specify the path to your image */
+    background-image: url('/img/house204.JPG'); /* Specify the path to your image */
     background-size: cover; /* Cover the entire area */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Prevent the image from repeating */
     animation: zoom 1s;
 }
+img{
+    transition: transform 1.2s;
+}
+img:hover {
+    transform: scale(2.2);
+}
 
 header {
-    background-color: #333;
-    color: #fbfcfa;
+    background-color: #151617;
+    color: white;
     padding: 0px;
-    text-align: center;
+    
 }
+
 nav ul {
-    list-style-type: none;
-    padding: 10px;
+   
+    padding: 0;
 }
 
 nav ul li {
-    display: inline-table;
-    margin-left: 30px;
-   
+    display: inline;
+    margin: 0 15px;
 }
 
-nav a {
-    color: rgb(251, 252, 249);
-    text-decoration: none;
+nav ul li a {
+    color: white;
+    
 }
-
-
 
 .car-list {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 15px;
+    gap: 5px;
     padding: 20px;
 }
 
@@ -71,7 +69,7 @@ nav a {
 
 footer {
     text-align: center;
-    padding: 20px;
+    padding: 5px;
     background-color: #333;
     color: #fff;
 }
