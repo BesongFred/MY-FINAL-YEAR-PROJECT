@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Search</title>
+    <link rel="stylesheet" href="/css/search.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Find Your Dream Property</h2>
+        <div class="search-form">
+            <input type="text" id="location" placeholder="Enter Location">
+            <input type="number" id="minPrice" placeholder="Min Price">
+            <input type="number" id="maxPrice" placeholder="Max Price">
+            <select id="propertyType">
+                <option value="">All Types</option>
+                <option value="Apartment">Apartment</option>
+                <option value="House">House</option>
+                <option value="Condo">Condo</option>
+            </select>
+            <button onclick="filterProperties()">Search</button>
+        </div>
+        <div class="property-list" id="propertyList"></div>
+    </div>
+
+    <script src="./js/search.js"></script>
+</body>
+</html>

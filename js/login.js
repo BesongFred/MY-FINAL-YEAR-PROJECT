@@ -1,17 +1,16 @@
-// login.js
-document.getElementById('login-form').addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevent the default form submission
+function togglePasswordVisibility() {
+    const passwordInput = document.getElementById('password');
+    const toggleButton = document.getElementById('togglePassword');
 
-    const email = document.getElementById('email').value;
-    const password = document.getElementById('password').value;
-
-    // Here you would typically send the credentials to your server for authentication
-    console.log('Email:', email);
-    console.log('Password:', password);
-
-    // For demonstration purposes, we'll just alert the user
-    alert('Welcome to Robert place');
-
-    // Redirect to the homepage or dashboard after successful login
-    window.location.href = 'HomePage.html'; // Change this to your desired redirect page
-});
+    if (passwordInput.type === 'password') {
+        passwordInput.type = 'text';
+        toggleButton.textContent = 'Hide Password';
+        toggleButton.style.color = 'white'; // Change button color when visible
+        toggleButton.style.fontWeight = 'bold';
+    } else {
+        passwordInput.type = 'password';
+        toggleButton.textContent = 'Show Password';
+        toggleButton.style.color = 'white'; // Reset button color
+        toggleButton.style.fontWeight = 'bold';
+    }
+}

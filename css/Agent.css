@@ -1,27 +1,25 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-image: url('./img/house201.jpeg'); /* Replace with your background image */
-    background-size: cover;
-    background-position: center;
-    color: white;
+   
     animation: zoom 1s;
 }
 
 .container {
-    max-width: 600px;
-    margin: 50px auto;
+    max-width: 500px;
+    margin: 40px auto;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(244, 171, 171, 0.7);
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px rgba(99, 194, 238, 0.5);
 }
 
 .logo {
     width: 100px; /* Adjust logo size */
     display: block;
     margin-bottom: 20px;
+    width: 70px;
+    height: 70px;
+    border-radius: 5px;
+ 
 }
 
 h2 {
@@ -40,38 +38,68 @@ textarea {
 }
 
 input[type="submit"] {
-    background-color: #28a745;
-    color: white;
+  
+    color: rgb(7, 6, 6);
     border: none;
     padding: 10px;
-    border-radius: 5px;
+   
+   
+
     cursor: pointer;
 }
 
 input[type="submit"]:hover {
-    background-color: #218838;
+    background-color: #bff7cb;
+    width: 100;
 }
-#agentForm {
-    background: red;
-    width: 100%;
-}
+
 #agentForm input {
-    background: yellow;
-    width: 75%;
+    background: rgb(247, 247, 245);
+    width: 100%;
+  
 }
 header {
     background-color: #333;
-    color: #fff;
+    color: #9a7f7f;
     padding: 1em;
     text-align: right;
 }
+input[type="submit"] {
+    width: px;  /* Set desired width */
+    height: 35px;  /* Set desired height */
+  
+    box-sizing: border-box; /* Ensures padding doesn’t increase size */
+    background-color: #007bff;
+    color: rgb(94, 124, 253);
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  
+  input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  
+  input[type="submit"]:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
 
 header nav ul {
     list-style: none;
     margin: 10px;
     padding: 10px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: right;
+   
 }
 
 header nav ul li {
@@ -79,16 +107,19 @@ header nav ul li {
 }
 
 header nav a {
-    color: #fff;
+    color: #fdfafa;
     text-decoration: none;
 }
 footer {
-    background-color: #333;
-    color: #fff;
-    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #333;
+    color: white;
     text-align: center;
-    clear: both;
-}
+    padding: 10px;
+  }
+  
 @keyframes zoom{
     from{
         transform: scale(0);

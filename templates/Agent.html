@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agent Information Management</title>
-    <link rel="stylesheet" href="./css/Agent.css">
-    <link rel="stylesheet" href="./css/rent.css">
-    <link rel="stylesheet" href="./css/property.css">
+    <link rel="stylesheet" href="/css/Agent.css">
+
 </head>
 <body>
     <header>
@@ -19,27 +18,32 @@
                 <li><a href="./Agent.html">AGENTS</a></li>
                 <li><a href="./about.html">ABOUT US</a></li> 
                <li><a href="./contact.html">CONTACT</a></li>
-               <body style="background-image: url('./img/house206.JPG');" ></body>  
+               <body style="background-image: url('/img/house206.JPG');" ></body>  
                
             </ul>
         </nav>
   </header>
     <div class="container">
-        <img src="house201.jpeg" alt="Logo" class="logo">
+        <img src="/img/house206.JPG" alt="Logo" class="logo">
         <h2>Agent Information Form</h2>
+        
         <form id="agentForm">
+            
             <input type="text" name="agentName" placeholder="Agent Name" required>
             <input type="email" name="agentEmail" placeholder="Email Address" required>
             <input type="tel" name="agentPhone" placeholder="Phone Number" required>
             <input type="text" name="agentLicense" placeholder="License Number" required>
             <input type="text" name="agencyName" placeholder="Agency Name" required>
-            <textarea name="agencyAddress" placeholder="Agency Address" required></textarea>
-            <input type="submit" value="Submit">
+            <input type="text" name="agencyAddress" placeholder="Agency Address" required>
+            
+            <input type="submit" value="Submit"> 
         </form>
+    
+
     </div>
     <footer>
         <p>&copy; 2025 Real Estate Property Management</p>
     </footer>
-    <script src="Agent.js"></script>
+    <script src="./js/Agent.js"></script>
 </body>
 </html>

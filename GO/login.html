@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/css/login.css">
+    <script>
+        // Client-side validation for login form
+        function validateLoginForm() {
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+
+            // Check if email or password is empty
+            if (email === "" || password === "") {
+                document.getElementById("error-message").innerHTML = "Email and password cannot be empty!";
+                document.getElementById("error-message").style.display = "block";
+                return false; // Prevent form submission
+            }
+
+            return true; // Allow form submission
+        }
+
+        // Clear error message when user starts typing
+        function clearError() {
+            document.getElementById("error-message").style.display = "none";
+        }
+    </script>
+</head>
+<body>
+
+{{if .LoggedIn}}
+    <!-- If logged in, show the home page -->
+    <h1>Welcome, {{.User.Email}}</h1>
+    <p>You are successfully logged in.</p>
+    <a href="/logout">Logout</a>
+{{else}}
+    <!-- If not logged in, show the login page -->
+    <h2>Login</h2>
+    
+    <!-- Display error message if any -->
+    <div id="error-message" style="color: red; display: none;"></div>
+    
+    <form method="post" action="/login" onsubmit="return validateLoginForm()">
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required onfocus="clearError()"><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required onfocus="clearError()"><br>
+
+        <button type="submit">Login</button>
+    </form>
+
+    <p>Don't have an account? <a href="/templates/login.html">Sign up</a></p>
+{{end}}
+
+</body>
+</html>

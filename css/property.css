@@ -4,6 +4,15 @@ body {
     padding: 0;
     animation: zoom 1s;
 }
+body {
+    margin: 0;
+    height: 100vh; /* Full height of the viewport */
+    background-image: url('/img/house203.JPG'); /* Specify the path to your image */
+    background-size: cover; /* Cover the entire area */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    animation: zoom 1s;
+}
 
 header {
     background-color: #333;

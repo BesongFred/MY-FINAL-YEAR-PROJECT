@@ -1,8 +1,10 @@
 body {
-    font-family: Arial, sans-serif;
-    background-image: url('house214.JPG'); /* Replace with your background image */
-    background-size: cover;
-    color: white;
+    margin: 0;
+    height: 100vh; /* Full height of the viewport */
+    background-image: url('/img/house204.JPG'); /* Specify the path to your image */
+    background-size: cover; /* Cover the entire area */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
     animation: zoom 1s;
 }
 
